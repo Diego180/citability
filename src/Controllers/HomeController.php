@@ -17,5 +17,5 @@ class HomeController {
 
     // Exibição de teste
     echo "<h1>Protótipo Citability funcionando!</h1>";
+    }
 }
-
