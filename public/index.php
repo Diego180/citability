@@ -88,7 +88,8 @@ $router->add("", ["controller" => "Home", "action" => "index"], "GET");
 // --- Dispatch the Router ---
 
 // Get requested URL from query string (e.g., index.php?url=login)
-$url = $_GET["url"] ?? ";
+$url = $_GET["url"] ?? "";
+
 $method = $_SERVER["REQUEST_METHOD"];
 
 $router->dispatch($url, $method);
