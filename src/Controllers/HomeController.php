@@ -7,14 +7,15 @@ use App\Core\Auth;
 
 class HomeController {
 
-    public function index() {
-        // If logged in, redirect to dashboard
-        if (Auth::isLoggedIn()) {
-            Auth::redirect("/dashboard");
-        } else {
-            // If not logged in, redirect to login page
-            Auth::redirect("/login");
-        }
-    }
+   public function index() {
+    // Temporariamente desativado por ausência da classe Auth
+    // if (Auth::isLoggedIn()) {
+    //     Auth::redirect("/dashboard");
+    // } else {
+    //     Auth::redirect("/login");
+    // }
+
+    // Exibição de teste
+    echo "<h1>Protótipo Citability funcionando!</h1>";
 }
 
